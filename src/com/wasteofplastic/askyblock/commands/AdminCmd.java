@@ -100,15 +100,15 @@ public class AdminCmd implements CommandExecutor, TabCompleter {
 
     private void help(CommandSender sender, String label) {
         if (!(sender instanceof Player)) {
-            Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " clearchallengereset <challenge>:" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpclearChallengeReset);
-            Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " clearreset <player>:" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpclearReset);
+            Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " clearchallengereset <görev> &7-" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpclearChallengeReset);
+            Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " clearreset <oyuncu> &7-" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpclearReset);
             Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " clearresetall:" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpclearResetAll);
             if (Settings.useMagicCobbleGen) {
                 Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " cobblestats: " + ChatColor.WHITE + " " + plugin.myLocale().adminHelpcobbleStats);
             }
-            Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " completechallenge <player> <challenge>:" + ChatColor.WHITE + " "
+            Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " completechallenge <oyuncu> <görev> &7-" + ChatColor.WHITE + " "
                     + plugin.myLocale().adminHelpcompleteChallenge);
-            Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " delete <player>:" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpdelete);
+            Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " delete <player> &7-" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpdelete);
             Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " info <player>:" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpinfo);
             Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " info challenges <player>:" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpinfo);
             Util.sendMessage(sender, plugin.myLocale().helpColor  + label + " info:" + ChatColor.WHITE + " " + plugin.myLocale().adminHelpinfoIsland);
